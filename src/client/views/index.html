@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Travel APP</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="holder headline">
+            <h3 id="title">Travel planner</h3>
+        </div>
+        <div class="content">
+            <div class="holder zip">
+                <label for="city" id="city_lb">My trip to : </label>
+                <input type="text" id="city" placeholder="enter city name here">
+                <label for="departing" id="depr_lb">Departing</label>
+                <input type="date" id="date-trip" min="2019-01-01" max="2020-12-30">
+            </div>
+            <div id="error"></div>
+            <div class="holder feel">
+                <button id="save" type="submit" onclick="return Client.performAction(event)" onsubmit="return Client.performAction(event)"> save trip </button>
+                <button id="remove" type="submit" onclick="return Client.removeTrip(event)" onsubmit="return Client.removeTrip(event)"> remove trip </button>
+                <div id="entry">
+                    <div id="lat">
+                    </div>
+                    <div id="lon">
+                    </div>
+                    <div id="wth">
+                    </div>
+                    <div id="country">
+                    </div>
+                    <div id="dayAway">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="image"><img id="image1" src="" alt=""></div>
+
+    </div>
+</body>
+
+</html>

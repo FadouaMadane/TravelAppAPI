@@ -1,0 +1,303 @@
+html {
+    background-color: lightcoral;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+}
+
+#title {
+    margin-left: -5em;
+    margin-top: -0.5em;
+}
+
+#app {
+    display: grid;
+    height: 30em;
+    //background: white;
+    color: black;
+    justify-content: center;
+    grid-gap: 1em;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 15%;
+    margin-top: 2em;
+    margin-left: 21em;
+    position: absolute;
+    box-shadow: 5px 10px 10px 5px black;
+    width: 50em;
+    height: 35em;
+    background-color: red($color: #000000);
+}
+
+div.content {
+    margin-left: 20em;
+    margin-top: -2em;
+}
+
+#content-img {
+    background-color: indianred;
+}
+
+#image {
+    width: 16em;
+    height: 12em;
+    /*  border: 4px solid black; */
+    margin-left: 0em;
+    margin-top: -18em;
+    padding: 0.5em;
+}
+
+#image1 {
+    width: 18em;
+    height: 15em;
+}
+
+#city {
+    width: 7em;
+    margin-left: 1.5em;
+}
+
+#date-trip {
+    width: 8.8em;
+    margin-left: 1.8em;
+}
+
+#save {
+    width: 9em;
+    margin-top: 1em;
+    height: 1.5em;
+}
+
+#remove {
+    width: 9em;
+    margin-top: -1.8em;
+    margin-left: 11em;
+    height: 1.5em;
+}
+
+.holder {
+    margin: auto;
+    display: grid;
+}
+
+.feel {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.headline {
+    font-size: 2.5rem;
+}
+
+label {
+    font-size: 1.7rem;
+}
+
+.zip {
+    grid-template-columns: 48% 48%;
+}
+
+button,
+textarea,
+input {
+    font-size: 1.4rem;
+}
+
+button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+
+.entry-item {
+    font-size: 1.5rem;
+}
+
+div.entry {
+    font-size: 1.7rem;
+    color: coral;
+    transition: ease 0.3s all;
+    font-weight: bold;
+    box-shadow: 5px 10px 10px 5px black;
+    height: 7em;
+    width: 20em;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    #title {
+        margin-top: 2.5em;
+    }
+    div.content {
+        margin-top: 6em;
+    }
+    #app {
+        width: 45em;
+        height: 85em;
+        margin-left: 7em;
+        margin-top: 10em;
+    }
+    #image1 {
+        width: 20em;
+        height: 20em;
+        margin-top: -20em;
+    }
+    #city {
+        width: 9em;
+        height: 2em;
+        margin-left: -6em;
+    }
+    #city_lb {
+        margin-left: 1em;
+        font-size: 2.5em;
+    }
+    #date-trip {
+        width: 9.5em;
+        height: 2em;
+        margin-left: -6em;
+    }
+    #depr_lb {
+        margin-left: 1em;
+        font-size: 2.5em;
+    }
+    #save {
+        width: 12em;
+        height: 3em;
+        margin-left: 1em;
+    }
+    #remove {
+        width: 12em;
+        height: 3em;
+        margin-left: 14em;
+        margin-top: -3em;
+    }
+    #entry {
+        font-size: 1.5rem;
+        height: 15em;
+        width: 20em;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    #app {
+        /* background-color: darkmagenta; */
+        width: 45em;
+        height: 50em;
+        margin-left: 7em;
+        margin-top: 5em;
+    }
+    #title {
+        margin-top: 2.5em;
+    }
+    div.content {
+        margin-top: 6em;
+    }
+    #image1 {
+        width: 20em;
+        height: 20em;
+        margin-top: -20em;
+    }
+    #city {
+        width: 9em;
+        height: 2em;
+        margin-left: -6em;
+    }
+    #city_lb {
+        margin-left: 1em;
+        font-size: 2.5em;
+    }
+    #date-trip {
+        width: 9.5em;
+        height: 2em;
+        margin-left: -6em;
+    }
+    #depr_lb {
+        margin-left: 1em;
+        font-size: 2.5em;
+    }
+    #save {
+        width: 12em;
+        height: 3em;
+        margin-left: 1em;
+    }
+    #remove {
+        width: 12em;
+        height: 3em;
+        margin-left: 14em;
+        margin-top: -3em;
+    }
+    #entry {
+        font-size: 1.5rem;
+        height: 15em;
+        width: 20em;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    #app {
+        /* background-color: darkmagenta; */
+        width: 45em;
+        height: 50em;
+        margin-left: 7em;
+        margin-top: 4em;
+    }
+    div.entry {
+        font-size: 2rem;
+        height: 7.5em;
+        width: 17em;
+    }
+    button {
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        height: 3em;
+    }
+}
+
+@media only screen and (min-device-width: 901px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) {
+    #app {
+        /* background-color: darkmagenta; */
+        width: 45em;
+        height: 32em;
+        margin-left: 7em;
+        margin-top: 2em;
+        /*   background-color: red; */
+    }
+    div.entry {
+        font-size: 2rem;
+        height: 5em;
+        width: 17em;
+    }
+    button {
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        height: 3em;
+    }
+}
+
+@media only screen and (min-device-width: 1001px) and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 2) {
+    #app {
+        /* background-color: darkmagenta; */
+        width: 50em;
+        height: 32em;
+        margin-left: 8em;
+        margin-top: 2em;
+        /* background-color: darkcyan; */
+    }
+    div.entry {
+        font-size: 2rem;
+        height: 5em;
+        width: 20em;
+    }
+    button {
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        height: 3em;
+        width: 28em;
+    }
+}
