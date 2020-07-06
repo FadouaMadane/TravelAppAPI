@@ -12,6 +12,17 @@ go to your terminal and run those commqnds :
                           2 : npm run build-prod it's adding a dist folder to your directory.
                           3 : npm run build-dev 
                           4 : npm run start to start the express server.
+                          
+ ##script names :
+ client/js/cityCkecker.js
+ client/js/fromHandler.js
+ views/index.js
+ server/index.js
+ 
+ ## test
+ server/index.test.js
+ tests/cityChecker.test.js
+ 
 
 ### Result 
 This project get your Destination and  the city name  and give you :
