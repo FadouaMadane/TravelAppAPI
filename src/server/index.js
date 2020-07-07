@@ -23,7 +23,7 @@ app.listen(port, function() {
 console.log(__dirname)
 
 app.get('/', function(req, res) {
-    res.sendFile('dist/index.html')
+    res.status(200).send('dist/index.html')
 })
 
 // get information
